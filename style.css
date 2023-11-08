@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico:wght@200;400;600&display=swap");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+
+*{
+  box-sizing: border-box;
+}
+.cd__main{
+ 
+   font-family: 'Pacifico', cursive !important;
+   min-height: 450px;
+}
+body { 
+  background-image: url(./pxfuel\ \(4\).jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Pacifico', cursive;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.heart {
+  position: fixed;
+  font-size: 1.5rem;
+  top: -1vh;
+  transform: translateY(0);
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+  from {
+     transform: translateY(0vh) translateX(-10vw); 
+  }
+  to {
+     transform: translateY(105vh) translateX(10vw); 
+  }
+}
+.player {
+    height: 190px;
+    width: 430px;
+    background-color: #25201e;
+    position: absolute;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    top: 40%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .player:hover {
+    box-shadow: 0 0 70px 5px rgb(242, 104, 5);
+  }
+  .player ul {
+    list-style: none;
+  }
+  .player ul li {
+    display: inline-block;
+  }
+  
+  .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .cover img {
+    height: 190px;
+    width: 190px;
+  }
+  
+  .info h1 {
+    margin-top: 15px;
+    margin-left: 180px;
+    line-height: 0;
+  }
+  .info h2 {
+    margin-left: 180px;
+  }
+  
+  .button-items {
+    margin-left: 180px;
+  }
+  
+  #slider {
+    width: 182px;
+    height: 4px;
+    background: #151518;
+    border-radius: 2px;
+  }
+  #slider div {
+    width: 4px;
+    height: 4px;
+    margin-top: 1px;
+    background: #ef6dbc;
+    border-radius: 2px;
+  }
+  
+  #timer {
+    color: #494b4e;
+    line-height: 0;
+    font-size: 9pt;
+    float: right;
+    font-family: Arial, Sans-Serif;
+  }
+  
+  .controls {
+    margin-top: 20px;
+  }
+  .controls svg:nth-child(2) {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  #play {
+    padding: 0 3px;
+    width: 30px;
+    height: 30px;
+    
+    enable-background: new 0 0 25 25;
+  }
+  #play g {
+    stroke: #fefefe;
+    stroke-width: 1;
+    stroke-miterlimit: 10;
+  }
+  #play g path {
+    fill: #fefefe;
+  }
+  
+  #play:hover {
+    cursor: pointer;
+  }
+  #play:hover g {
+    stroke: #8f4da9;
+    cursor: pointer;
+  }
+  #play:hover g path {
+    fill: #9b59b6;
+    cursor: pointer;
+  }
+  
+  .step-backward {
+    width: 18px;
+    height: 18px;
+  
+    enable-background: new 0 0 25 25;
+    margin-bottom: 5px;
+  }
+  .step-backward g polygon {
+    fill: #fefefe;
+  }
+  
+  .step-foreward {
+    width: 18px;
+    height: 18px;
+    
+    enable-background: new 0 0 25 25;
+    margin-bottom: 5px;
+  }
+  .step-foreward g polygon {
+    fill: #fefefe;
+  }
+  
+  #pause {
+    
+    enable-background: new 0 0 25 25;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: -38px;
+    cursor: pointer;
+  }
+  #pause rect {
+    fill: white;
+  }
+  
+  #pause:hover rect {
+    fill: #8f4da9;
+  }
+  
+  .step-backward g polygon:hover,
+  .step-foreward g polygon:hover {
+    fill: #ef6dbc;
+    cursor: pointer;
+  }
+  
+  
+  p {
+    color: #bdbdbd;
+  }
+  
+  #skip {
+    float: right;
+    margin-top: 10px;
+  }
+  #skip p {
+    color: #2980b9;
+  }
+  #skip p:hover {
+    color: rgb(231, 60, 220);
+    cursor: pointer;
+  }
+  
+  .expend {
+    padding: 0.5px;
+    cursor: pointer;
+  }
+  .expend svg:hover g polygon {
+    fill: rgb(232, 104, 189), 19, 113;
+  }
+  
+  @media (min-width: 320px) {
+   
+    .player {
+      height: 190px;
+      width: 350px;
+  
+      top: 40%;
+      left: 5%;
+    }
+    h1 {
+      font-size: 9pt;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: rgb(255, 255, 255);
+    }
+  
+    h2 {
+      font-size: 8pt;
+      font-weight: 100;
+    }
+    .cover img {
+      height: 190px;
+      width: 150px;
+    }
+    .info h1 {
+      margin-left: 120px;
+    }
+    .info h4 {
+      margin-left: 120px;
+    }
+    .info h2 {
+      margin-left: 120px;
+    }
+    .button-items {
+      margin-left: 120px;
+    }
+  }
+  @media (min-width: 480px) {
+    
+    .player {
+      left: 15%;
+    }
+  }
+  @media (min-width: 600px) {
+    
+    .player {
+      left: 22%;
+    }
+  }
+  @media (min-width: 801px) {
+    
+    .player {
+      left: 32%;
+    }
+  }
+  @media (min-width: 1025px) {
+   
+    .player {
+      left: 32%;
+    }
+  }
+  @media (min-width: 1281px) {
+    .player {
+      left: 38%;
+    }
+  }
+  
